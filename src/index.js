@@ -27,7 +27,7 @@ io.on('connection', socket => {
     
 
     socket.on('joined', () => {
-        console.log(socket.id);
+        //console.log(socket.id);
         io.to(socket.id).emit('prev_msgs', msgs)
     })
 
